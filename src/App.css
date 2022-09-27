@@ -1,38 +1,39 @@
-.App {
-  text-align: center;
+body{
+  background-color: rgb(134, 92, 28);
+}
+.Gender{
+  position: relative;
+  left: 500px;
+  top:30px;
+}
+.Gender-label{
+    position: relative;
+    left: 560px;
+    top: 10px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.birthDate-container{
+  position: relative;
+  left: 400px;
+  top: 100px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.birthDate-label{
+  position: relative;
+  left:150px;
+  top: -25px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.submit-btn{
+  position: relative;
+  left: -50px;
+  top: 27px;
+  font-size: 15pt;
+  border-radius: 22%;
 }
-
-.App-link {
-  color: #61dafb;
+.birthDate-input{
+  position: relative;
+  left:40px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.submit-btn:hover{
+  color:brown;
+  background-color: chartreuse;
 }
