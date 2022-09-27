@@ -15,6 +15,19 @@ app.use(cors({
 }))
 // allows the server to use or send json objects
 app.use(express.json())
+
+//server frontend
+if (process.env.NODE_ENV === "production") {
+    app.use(express.static(path.join(__dirname, '../build')))
+
+    app.get('*', (req, res) => res.sendFile(path.resolve(__dirname, '../', 'build', 'index.html')))
+}
+else {
+    app.get('/', (req, res) => res.send('Please set to production'))
+}
+
+
+
 // retrives data from the frontend
 app.post('/*', (req, res) => {
 
@@ -87,4 +100,6 @@ app.listen(PORT, () => {
     console.log(`Is running on port ${PORT}`)
 
 })
+
+
 
